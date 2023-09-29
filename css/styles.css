@@ -272,6 +272,7 @@ body .container .hero-desktop {
   body .container main,
   body .container header {
     width: 60%;
+    padding-left: 5%;
   }
   body .container .hero-desktop {
     width: 40%;
