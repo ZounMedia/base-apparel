@@ -12,61 +12,60 @@ body {
   display: flex;
   justify-content: center;
 }
-
-.container {
+body .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   max-width: 1440px;
 }
-.container header {
+body .container header {
   height: 40%;
 }
-.container header .logo {
+body .container header .logo {
   display: flex;
   align-items: center;
   width: 100%;
   height: 83px;
   padding: 0 32px;
 }
-.container header .logo img {
+body .container header .logo img {
   width: 100px;
   height: 21px;
 }
-.container header .hero {
+body .container header .hero {
   width: 100%;
   height: calc(100% - 83px);
 }
-.container header .hero img {
+body .container header .hero img {
   width: 100%;
   height: 100%;
 }
 @media (min-width: 768px) {
-  .container header {
+  body .container header {
     height: 50%;
   }
 }
-.container main {
+body .container main {
   height: 60%;
 }
-.container main section {
+body .container main section {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container main section .heading,
-.container main section .description {
+body .container main section .heading,
+body .container main section .description {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container main section .heading {
+body .container main section .heading {
   height: 126px;
 }
-.container main section .heading h1 {
+body .container main section .heading h1 {
   width: 311px;
   text-align: center;
   font-family: Josefin Sans;
@@ -77,22 +76,22 @@ body {
   letter-spacing: 10.825px;
   text-transform: uppercase;
 }
-.container main section .heading h1 span {
+body .container main section .heading h1 span {
   color: hsl(0, 6%, 24%);
   font-weight: 600;
 }
-.container main section .description {
+body .container main section .description {
   margin-top: 16px;
   min-height: 88px;
 }
-.container main section .description p {
+body .container main section .description p {
   max-width: 311px;
   text-align: center;
   color: hsl(0, 36%, 70%);
   font-size: 14px;
   line-height: 28px; /* 175% */
 }
-.container main section form {
+body .container main section form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,7 +103,7 @@ body {
   border-radius: 28px;
   border: 1px solid hsl(0, 36%, 70%);
 }
-.container main section form input {
+body .container main section form input {
   width: 50%;
   height: 80%;
   border: none;
@@ -113,21 +112,21 @@ body {
   font-size: 14px;
   line-height: 28px; /* 200% */
 }
-.container main section form .btn-group {
+body .container main section form .btn-group {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
 }
-.container main section form .btn-group img.error {
+body .container main section form .btn-group img.error {
   width: 24px;
   height: 24px;
   display: none;
 }
-.container main section form .btn-group img.error.active {
+body .container main section form .btn-group img.error.active {
   display: block;
 }
-.container main section form .btn-group button {
+body .container main section form .btn-group button {
   width: 64px;
   height: 48px;
   position: relative;
@@ -137,64 +136,145 @@ body {
   border-radius: 100%;
   transition: all 0.3s ease-in-out;
 }
-.container main section form .btn-group button:hover {
+body .container main section form .btn-group button:hover {
   cursor: pointer;
 }
-.container main section form span {
+body .container main section form span {
   display: none;
   margin-top: 8px;
   color: hsl(0, 93%, 68%);
   font-size: 13px;
 }
-.container main section form span.active {
+body .container main section form span.active {
   display: block;
 }
-.container main section form.active {
+body .container main section form.active {
   border: 2px solid hsl(0, 93%, 68%);
 }
 @media (min-width: 768px) {
-  .container main {
+  body .container main {
     height: 50%;
   }
-  .container main section .heading {
+  body .container main section .heading {
     height: 192px;
   }
-  .container main section .heading h1 {
+  body .container main section .heading h1 {
     width: 444px;
     font-size: 64px;
     line-height: 64px; /* 100% */
     letter-spacing: 17.321px;
   }
-  .container main section .description {
+  body .container main section .description {
     margin-top: 16px;
     min-height: 88px;
   }
-  .container main section .description p {
+  body .container main section .description p {
     max-width: 444px;
     font-size: 16px;
     line-height: 28px; /* 175% */
   }
-  .container main section form {
+  body .container main section form {
     width: 400px;
     height: 56px;
   }
-  .container main section form input {
+  body .container main section form input {
     font-size: 16px;
     line-height: 28px; /* 200% */
   }
-  .container main section form .btn-group {
+  body .container main section form .btn-group {
     width: 50%;
   }
-  .container main section form .btn-group img.error {
+  body .container main section form .btn-group img.error {
     margin-right: -15px;
   }
-  .container main section form .btn-group button {
+  body .container main section form .btn-group button {
     width: 100px;
     height: 56px;
     right: -25px;
   }
-  .container main section form .btn-group button img {
+  body .container main section form .btn-group button img {
     transform: scale(1.3);
+  }
+}
+body .container .hero-desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  body .container header {
+    width: calc(100% - 610px);
+    height: 15%;
+  }
+  body .container header .logo {
+    height: 100%;
+    padding: 74px 0 74px 156px;
+  }
+  body .container header .logo img {
+    width: 158px;
+    height: 33px;
+  }
+  body .container header .hero {
+    display: none;
+  }
+  body .container main {
+    width: calc(100% - 610px);
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container main section {
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 300px 156px;
+    align-items: flex-start;
+  }
+  body .container main section .heading {
+    margin-top: -100px;
+  }
+  body .container main section .heading h1 {
+    text-align: left;
+  }
+  body .container main section .description {
+    margin-top: 25px;
+  }
+  body .container main section .description p {
+    text-align: left;
+  }
+  body .container main section form {
+    margin-top: 30px;
+    width: 444px;
+  }
+  body .container main section form .btn-group img.error {
+    margin-right: 0;
+  }
+  body .container main section form .btn-group button {
+    right: -15px;
+  }
+  body .container .hero-desktop {
+    width: 610px;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  body .container .hero-desktop img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body .container {
+    position: relative;
+    max-width: 100vw;
+  }
+  body .container main,
+  body .container header {
+    width: 60%;
+  }
+  body .container .hero-desktop {
+    width: 40%;
   }
 }
 
