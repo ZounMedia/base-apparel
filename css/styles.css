@@ -271,11 +271,11 @@ body .container .hero-desktop {
   }
   body .container main,
   body .container header {
-    width: 60%;
-    padding-left: 5%;
+    width: 50%;
+    padding-left: 2%;
   }
   body .container .hero-desktop {
-    width: 40%;
+    width: 50%;
   }
 }
 
