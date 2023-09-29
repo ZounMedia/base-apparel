@@ -23,7 +23,7 @@ An HTML CSS and Javascript interactive rating component.
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-and-sass-LSF__YoPKW
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-sass-and-js-X_jxQNadvI
 - Live Site URL: https://base-apparel-indol.vercel.app/
 - GitHub Repo: https://github.com/ZounMedia/base-apparel
 
