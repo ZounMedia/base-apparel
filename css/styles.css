@@ -8,6 +8,9 @@ body {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%);
+  background: linear-gradient(221deg, #fff1f1 2.6%, #fff 96.36%);
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -15,7 +18,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(221deg, #fff1f1 2.6%, #fff 96.36%);
+  max-width: 1440px;
 }
 .container header {
   height: 40%;
@@ -38,6 +41,11 @@ body {
 .container header .hero img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 768px) {
+  .container header {
+    height: 50%;
+  }
 }
 .container main {
   height: 60%;
@@ -81,7 +89,6 @@ body {
   max-width: 311px;
   text-align: center;
   color: hsl(0, 36%, 70%);
-  font-weight: 400;
   font-size: 14px;
   line-height: 28px; /* 175% */
 }
@@ -102,7 +109,7 @@ body {
   height: 80%;
   border: none;
   outline: none;
-  color: #423a3a;
+  color: hsl(0, 6%, 24%);
   font-size: 14px;
   line-height: 28px; /* 200% */
 }
@@ -137,12 +144,58 @@ body {
   display: none;
   margin-top: 8px;
   color: hsl(0, 93%, 68%);
+  font-size: 13px;
 }
 .container main section form span.active {
   display: block;
 }
-.container main section form.error {
+.container main section form.active {
   border: 2px solid hsl(0, 93%, 68%);
+}
+@media (min-width: 768px) {
+  .container main {
+    height: 50%;
+  }
+  .container main section .heading {
+    height: 192px;
+  }
+  .container main section .heading h1 {
+    width: 444px;
+    font-size: 64px;
+    line-height: 64px; /* 100% */
+    letter-spacing: 17.321px;
+  }
+  .container main section .description {
+    margin-top: 16px;
+    min-height: 88px;
+  }
+  .container main section .description p {
+    max-width: 444px;
+    font-size: 16px;
+    line-height: 28px; /* 175% */
+  }
+  .container main section form {
+    width: 400px;
+    height: 56px;
+  }
+  .container main section form input {
+    font-size: 16px;
+    line-height: 28px; /* 200% */
+  }
+  .container main section form .btn-group {
+    width: 50%;
+  }
+  .container main section form .btn-group img.error {
+    margin-right: -15px;
+  }
+  .container main section form .btn-group button {
+    width: 100px;
+    height: 56px;
+    right: -25px;
+  }
+  .container main section form .btn-group button img {
+    transform: scale(1.3);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
