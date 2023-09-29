@@ -9,7 +9,7 @@
 //**Colors
 
 //Primary
-$desatruated-red: hsl(0, 36%, 70%);
+$desaturated-red: hsl(0, 36%, 70%);
 $soft-red: hsl(0, 93%, 68%);
 
 //Neutral
@@ -25,4 +25,162 @@ $desktop: 1440px;
 body {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
+  color: $desaturated-red;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: $gradient2;
+
+  header {
+    height: 40%;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 83px;
+      padding: 0 32px;
+
+      img {
+        width: 100px;
+        height: 21px;
+      }
+    }
+
+    .hero {
+      width: 100%;
+      height: calc(100% - 83px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  main {
+    height: 60%;
+
+    section {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .heading,
+      .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .heading {
+        height: 126px;
+
+        h1 {
+          width: 311px;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 42px; /* 105% */
+          letter-spacing: 10.825px;
+          text-transform: uppercase;
+          span {
+            color: $dark-grayish-red;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .description {
+        margin-top: 16px;
+        min-height: 88px;
+
+        p {
+          max-width: 311px;
+          text-align: center;
+          color: $desaturated-red;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px; /* 175% */
+        }
+      }
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 311px;
+        height: 48px;
+        margin-top: 16px;
+        padding-left: 24px;
+        border-radius: 28px;
+        border: 1px solid $desaturated-red;
+
+        input {
+          width: 50%;
+          height: 80%;
+          border: none;
+          outline: none;
+          color: #423a3a;
+          font-size: 14px;
+          line-height: 28px; /* 200% */
+        }
+
+        .btn-group {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50%;
+
+          img.error {
+            width: 24px;
+            height: 24px;
+            display: none;
+
+            &.active {
+              display: block;
+            }
+          }
+
+          button {
+            width: 64px;
+            height: 48px;
+            position: relative;
+            right: -9px;
+            background: $gradient1;
+            border: none;
+            border-radius: 100%;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        span {
+          display: none;
+          margin-top: 8px;
+          color: $soft-red;
+
+          &.active {
+            display: block;
+          }
+        }
+
+        &.error {
+          border: 2px solid $soft-red;
+        }
+      }
+    }
+  }
 }
